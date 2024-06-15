@@ -8,19 +8,22 @@
 import SwiftUI
 
 struct PDFStringsView: View {
-    let title: String
-    let strings: [String]
+    @ObservedObject var model: PDFStringsModel
+    
+    internal init(model: PDFStringsModel) {
+        self.model = model
+    }
 
     var body: some View {
         VStack {
-            Text(title)
+            Text(model.title)
                 .font(.largeTitle)
                 .padding(.top, 20)
             Button("Ler valores", action: {
                 
             })
 
-            List(strings, id: \.self) { string in
+            List(model.strings, id: \.self) { string in
                 Text(string)
             }
         }
@@ -29,7 +32,8 @@ struct PDFStringsView: View {
 
 struct PDFStringsView_Previews: PreviewProvider {
     static var previews: some View {
-        PDFStringsView(title: "Valores", strings: ["String 1", "String 2", "String 3", "String 4"])
+        let modelPreview = PDFStringsModel(title: "Valores", strings: ["String 1", "String 2", "String 3", "String 4"])
+        PDFStringsView(model: modelPreview)
     }
 }
 

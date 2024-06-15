@@ -6,4 +6,15 @@
 //
 
 import Foundation
+import SwiftUI
 
+@MainActor
+class PDFStringsModel: ObservableObject {
+    @Published var title: String
+    @Published var strings: [String]
+    
+    internal init(title: String, strings: [String]) {
+        self.title = title
+        self.strings = strings
+    }
+}

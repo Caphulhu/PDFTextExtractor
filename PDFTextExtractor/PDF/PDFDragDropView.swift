@@ -40,7 +40,7 @@ struct PDFDragDropView: View {
                 }
             if isPDFRead {
                 NavigationLink(destination: {
-                    PDFStringsView(title: "Valores", strings: pdfStrings)
+                    PDFStringsView(model: PDFStringsModel(title: "Valores", strings: [""]))
                 }, label: {
                     Text("Ler texto do PDF")
                 })

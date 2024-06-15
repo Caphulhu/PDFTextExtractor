@@ -91,6 +91,13 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		1E0573C12C1E0EF800FCB36B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		1E7A2FDD2C1D2CF300185E39 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +133,7 @@
 				1E7A2FDD2C1D2CF300185E39 /* Coordinator */,
 				1E7F02832C1CA70900209D23 /* Strings */,
 				1E7F027C2C1C90CE00209D23 /* PDF */,
+				1E0573C12C1E0EF800FCB36B /* Settings */,
 				1E7F02552C1C8F3600209D23 /* Assets.xcassets */,
 				1E7F025A2C1C8F3600209D23 /* PDFTextExtractor.entitlements */,
 				1E7F02572C1C8F3600209D23 /* Preview Content */,
