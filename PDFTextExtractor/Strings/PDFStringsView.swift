@@ -16,6 +16,9 @@ struct PDFStringsView: View {
             Text(title)
                 .font(.largeTitle)
                 .padding(.top, 20)
+            Button("Ler valores", action: {
+                
+            })
 
             List(strings, id: \.self) { string in
                 Text(string)

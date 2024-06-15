@@ -11,7 +11,7 @@ import SwiftUI
 struct PDFTextExtractorApp: App {
     var body: some Scene {
         WindowGroup {
-            PDFDragDropView()
+            ContentView()
         }
     }
 }
