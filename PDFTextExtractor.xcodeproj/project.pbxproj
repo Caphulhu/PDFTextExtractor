@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E0573C02C1E050400FCB36B /* PDFStringsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0573BF2C1E050400FCB36B /* PDFStringsModel.swift */; };
 		1E7A2FDF2C1D2D0400185E39 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7A2FDE2C1D2D0400185E39 /* Coordinator.swift */; };
 		1E7F02522C1C8F3500209D23 /* PDFTextExtractorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F02512C1C8F3500209D23 /* PDFTextExtractorApp.swift */; };
 		1E7F02542C1C8F3500209D23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F02532C1C8F3500209D23 /* ContentView.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E0573BF2C1E050400FCB36B /* PDFStringsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFStringsModel.swift; sourceTree = "<group>"; };
 		1E7A2FDE2C1D2D0400185E39 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		1E7F024E2C1C8F3500209D23 /* PDFTextExtractor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFTextExtractor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7F02512C1C8F3500209D23 /* PDFTextExtractorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFTextExtractorApp.swift; sourceTree = "<group>"; };
@@ -80,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E0573BE2C1E044100FCB36B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1E7F02512C1C8F3500209D23 /* PDFTextExtractorApp.swift */,
+				1E7F02532C1C8F3500209D23 /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		1E7A2FDD2C1D2CF300185E39 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,11 +122,10 @@
 		1E7F02502C1C8F3500209D23 /* PDFTextExtractor */ = {
 			isa = PBXGroup;
 			children = (
+				1E0573BE2C1E044100FCB36B /* Main */,
 				1E7A2FDD2C1D2CF300185E39 /* Coordinator */,
 				1E7F02832C1CA70900209D23 /* Strings */,
 				1E7F027C2C1C90CE00209D23 /* PDF */,
-				1E7F02512C1C8F3500209D23 /* PDFTextExtractorApp.swift */,
-				1E7F02532C1C8F3500209D23 /* ContentView.swift */,
 				1E7F02552C1C8F3600209D23 /* Assets.xcassets */,
 				1E7F025A2C1C8F3600209D23 /* PDFTextExtractor.entitlements */,
 				1E7F02572C1C8F3600209D23 /* Preview Content */,
@@ -161,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				1E7F02852C1CA72000209D23 /* PDFStringsView.swift */,
+				1E0573BF2C1E050400FCB36B /* PDFStringsModel.swift */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -298,6 +309,7 @@
 				1E7F02822C1CA02E00209D23 /* PDFDragDropView.swift in Sources */,
 				1E7F02802C1C992B00209D23 /* PDFKitView.swift in Sources */,
 				1E7A2FDF2C1D2D0400185E39 /* Coordinator.swift in Sources */,
+				1E0573C02C1E050400FCB36B /* PDFStringsModel.swift in Sources */,
 				1E7F02542C1C8F3500209D23 /* ContentView.swift in Sources */,
 				1E7F02862C1CA72000209D23 /* PDFStringsView.swift in Sources */,
 				1E7F02522C1C8F3500209D23 /* PDFTextExtractorApp.swift in Sources */,

@@ -8,6 +8,7 @@
 import SwiftUI
 import PDFKit
 
+/// This class is necessary becouse PDFKit is a UIKit class
 struct PDFKitView: NSViewRepresentable {
     let url: URL
 
