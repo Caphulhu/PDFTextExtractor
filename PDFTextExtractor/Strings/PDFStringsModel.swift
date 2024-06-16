@@ -10,14 +10,22 @@ import SwiftUI
 
 @MainActor
 class PDFStringsModel: ObservableObject {
-    @Published var title: String
+    var title: String
     @Published var strings: [String]
+    let json = JsonReader()
     
     internal init(title: String, strings: [String]) {
         self.title = title
         self.strings = strings
-        
-        let json = JsonReader()
-        json.readSettings()
+        setup(strings: strings)
+        json.readSettings(with: strings)
+    }
+    
+    private func setup(strings: [String]) {
+        var finalArray = [String]()
+        for string in strings {
+            finalArray.append(contentsOf: string.components(separatedBy: "\n"))
+        }
+        self.strings = finalArray
     }
 }

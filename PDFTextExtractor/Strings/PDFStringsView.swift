@@ -20,7 +20,12 @@ struct PDFStringsView: View {
                 .font(.largeTitle)
                 .padding(.top, 20)
             Button("Ler valores", action: {
-                
+                if let tuple = model.json.search(strings: model.strings) {
+                    let combined = zip(tuple.0, tuple.1)
+                    model.strings = combined.map({ (key, value) in
+                        return "\(key) \(value)"
+                    })
+                }
             })
 
             List(model.strings, id: \.self) { string in
