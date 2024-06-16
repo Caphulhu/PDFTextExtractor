@@ -1,0 +1,24 @@
+{
+    "paymentSlipType": [
+        {
+            "name": "GUARIDA IMOVEIS",
+            "paymentKeys": {
+                "keyStart": "Descrição",
+                "keyEnd": "ECONOMIA",
+                "valueStart": "Valor (R$)",
+                "valueEnd": "GUARIDA SERVICOS IMOBILIÁRIOS LTDA"
+            }
+        },
+        {
+            "name": "GUARIDA IMOVEIS",
+            "paymentKeys": {
+                "keyStart": "Descrição",
+                "keyEnd": "ECONOMIA",
+                "valueStart": "Valor (R$)",
+                "valueEnd": "GUARIDA SERVICOS IMOBILIÁRIOS LTDA"
+            }
+        }
+    ]
+    
+}
+

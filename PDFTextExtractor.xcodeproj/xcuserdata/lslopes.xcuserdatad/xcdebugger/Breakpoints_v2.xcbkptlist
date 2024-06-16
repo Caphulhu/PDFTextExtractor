@@ -3,4 +3,84 @@
    uuid = "9F932D98-513E-419F-A388-8353A5992A6E"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A42CA5B-1506-43D3-A1C7-07C540C178C6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PDFTextExtractor/Settings/JsonReader.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "readSettings()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F10D805A-E258-4689-BC9F-522B4EDB0DC8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PDFTextExtractor/Strings/PDFStringsModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "init(title:strings:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "054AB711-3B70-4989-864B-6CF0478C8E19"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PDFTextExtractor/Settings/JsonReader.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "readSettings()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "054AB711-3B70-4989-864B-6CF0478C8E19 - 2d7ba9bb9f4fa8a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PDFTextExtractor.JsonReader.readSettings() -&gt; ()"
+                  moduleName = "PDFTextExtractor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lslopes/Developer/iOS/PDFTextExtractor/PDFTextExtractor/Settings/JsonReader.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12">
+               </Location>
+               <Location
+                  uuid = "054AB711-3B70-4989-864B-6CF0478C8E19 - 2d7ba9bb9f4fa8a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PDFTextExtractor.JsonReader.readSettings() -&gt; ()"
+                  moduleName = "PDFTextExtractor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lslopes/Developer/iOS/PDFTextExtractor/PDFTextExtractor/Settings/JsonReader.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

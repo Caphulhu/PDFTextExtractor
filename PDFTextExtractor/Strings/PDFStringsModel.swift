@@ -16,5 +16,8 @@ class PDFStringsModel: ObservableObject {
     internal init(title: String, strings: [String]) {
         self.title = title
         self.strings = strings
+        
+        let json = JsonReader()
+        json.readSettings()
     }
 }
