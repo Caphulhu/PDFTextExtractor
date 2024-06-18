@@ -20,7 +20,9 @@ struct PDFFolderPickerView: View {
             }
             .padding()
             Text(selectedFolderURL?.path ?? "No folder selected")
-            PDFDocumentList(folderURL: selectedFolderURL)
+            if let selectedFolderURL = self.selectedFolderURL {
+                PDFDocumentList(folderURL: selectedFolderURL)
+            }
         }
     }
     
