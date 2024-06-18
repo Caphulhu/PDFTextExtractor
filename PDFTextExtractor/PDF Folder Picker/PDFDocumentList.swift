@@ -28,7 +28,7 @@ struct PDFDocumentList: View {
                 Text("ABRIR \(pdfName ?? "")")
             }
             NavigationLink(destination: {
-                PDFStringsView(model: PDFStringsModel(title: "Valores", strings: StringUtils.readPDFStrings(at: pdfURL)))
+                PDFStringsView(model: PDFStringsModel(title: "Valores", strings: StringUtils.readPDFStrings(at: pdfURL), pdfURL: pdfURL))
             }) {
                 Text("LER \(pdfName ?? "")")
             }
@@ -37,8 +37,6 @@ struct PDFDocumentList: View {
             Text(fileName)
                 .onTapGesture {
                     if let fileURL = getPDFFileURL(fileName: fileName) {
-//                        pdfDatasourse.folderURL = fileURL
-//                        openPDF(fileURL: fileURL)
                         pdfURL = fileURL
                         pdfName = fileName
                     }
@@ -57,12 +55,6 @@ struct PDFDocumentList: View {
     func getPDFFileURL(fileName: String) -> URL? {
         return folderURL.appendingPathComponent(fileName)
     }
-
-//    func openPDF(fileURL: URL) {
-//        let preview = QLPreviewPanel.shared()
-//        preview?.dataSource = pdfDatasourse
-//        preview?.makeKeyAndOrderFront(nil)
-//    }
 }
 
 

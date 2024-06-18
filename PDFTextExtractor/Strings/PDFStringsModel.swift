@@ -13,10 +13,12 @@ class PDFStringsModel: ObservableObject {
     var title: String
     @Published var strings: [String]
     let json = JsonReader()
+    @State var pdfURL: URL
     
-    internal init(title: String, strings: [String]) {
+    internal init(title: String, strings: [String], pdfURL: URL) {
         self.title = title
         self.strings = strings
+        self.pdfURL = pdfURL
         setup(strings: strings)
         json.readSettings(with: strings)
     }
