@@ -27,6 +27,11 @@ struct PDFDocumentList: View {
             }) {
                 Text("ABRIR \(pdfName ?? "")")
             }
+            NavigationLink(destination: {
+                PDFStringsView(model: PDFStringsModel(title: "Valores", strings: StringUtils.readPDFStrings(at: pdfURL)))
+            }) {
+                Text("LER \(pdfName ?? "")")
+            }
         }
         List(getPDFFileNames(), id: \.self) { fileName in
             Text(fileName)
