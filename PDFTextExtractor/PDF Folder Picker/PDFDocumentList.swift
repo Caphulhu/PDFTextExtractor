@@ -7,12 +7,13 @@
 
 import SwiftUI
 import PDFKit
-import Quartz // Add this line to import the Quartz framework
-import QuickLook
+
 
 struct PDFDocumentList: View {
     let folderURL: URL // Replace with your actual folder path
     private var pdfDatasourse: PDFDocumentListQLDatasource
+    @State private var pdfName: String?
+    @State private var pdfURL: URL?
     
     init(folderURL: URL) {
         self.folderURL = folderURL
@@ -20,12 +21,21 @@ struct PDFDocumentList: View {
     }
     
     var body: some View {
+        if let pdfURL = pdfURL {
+            NavigationLink(destination: {
+                PDFKitView(url: pdfURL)
+            }) {
+                Text("ABRIR \(pdfName ?? "")")
+            }
+        }
         List(getPDFFileNames(), id: \.self) { fileName in
             Text(fileName)
                 .onTapGesture {
                     if let fileURL = getPDFFileURL(fileName: fileName) {
-                        pdfDatasourse.folderURL = fileURL
-                        openPDF(fileURL: fileURL)
+//                        pdfDatasourse.folderURL = fileURL
+//                        openPDF(fileURL: fileURL)
+                        pdfURL = fileURL
+                        pdfName = fileName
                     }
                 }
         }
@@ -43,25 +53,11 @@ struct PDFDocumentList: View {
         return folderURL.appendingPathComponent(fileName)
     }
 
-    func openPDF(fileURL: URL) {
-        let preview = QLPreviewPanel.shared()
-        preview?.dataSource = pdfDatasourse
-        preview?.makeKeyAndOrderFront(nil)
-    }
+//    func openPDF(fileURL: URL) {
+//        let preview = QLPreviewPanel.shared()
+//        preview?.dataSource = pdfDatasourse
+//        preview?.makeKeyAndOrderFront(nil)
+//    }
 }
 
-class PDFDocumentListQLDatasource: QLPreviewPanelDataSource {
-    var folderURL: URL
-    
-    internal init(folderURL: URL) {
-        self.folderURL = folderURL
-    }
-    
-    func numberOfPreviewItems(in panel: QLPreviewPanel) -> Int {
-        return 1
-    }
 
-    func previewPanel(_ panel: QLPreviewPanel, previewItemAt index: Int) -> QLPreviewItem {
-        return folderURL as NSURL
-    }
-}

@@ -12,6 +12,7 @@
 		1E0573C52C1E12A300FCB36B /* JsonReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0573C42C1E12A300FCB36B /* JsonReader.swift */; };
 		1E0573C72C1E12F200FCB36B /* settings.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E0573C62C1E12F200FCB36B /* settings.json */; };
 		1E7A2FDF2C1D2D0400185E39 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7A2FDE2C1D2D0400185E39 /* Coordinator.swift */; };
+		1E7EF6762C210D8B0093CDBC /* PDFPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7EF6752C210D8B0093CDBC /* PDFPreview.swift */; };
 		1E7F02522C1C8F3500209D23 /* PDFTextExtractorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F02512C1C8F3500209D23 /* PDFTextExtractorApp.swift */; };
 		1E7F02542C1C8F3500209D23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F02532C1C8F3500209D23 /* ContentView.swift */; };
 		1E7F02562C1C8F3600209D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E7F02552C1C8F3600209D23 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		1E0573C42C1E12A300FCB36B /* JsonReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonReader.swift; sourceTree = "<group>"; };
 		1E0573C62C1E12F200FCB36B /* settings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = settings.json; sourceTree = "<group>"; };
 		1E7A2FDE2C1D2D0400185E39 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		1E7EF6752C210D8B0093CDBC /* PDFPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPreview.swift; sourceTree = "<group>"; };
 		1E7F024E2C1C8F3500209D23 /* PDFTextExtractor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFTextExtractor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7F02512C1C8F3500209D23 /* PDFTextExtractorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFTextExtractorApp.swift; sourceTree = "<group>"; };
 		1E7F02532C1C8F3500209D23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,15 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		1E7EF6742C210D740093CDBC /* PDF Preview */ = {
+			isa = PBXGroup;
+			children = (
+				1E7F027F2C1C992B00209D23 /* PDFKitView.swift */,
+				1E7EF6752C210D8B0093CDBC /* PDFPreview.swift */,
+			);
+			path = "PDF Preview";
+			sourceTree = "<group>";
+		};
 		1E7F02452C1C8F3500209D23 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +160,7 @@
 				1E7F02832C1CA70900209D23 /* Strings */,
 				1E8D367F2C1F4CF00042BD52 /* PDF Folder Picker */,
 				1E7F027C2C1C90CE00209D23 /* PDF Drag Drop */,
+				1E7EF6742C210D740093CDBC /* PDF Preview */,
 				1E0573C12C1E0EF800FCB36B /* Settings */,
 				1E7F02552C1C8F3600209D23 /* Assets.xcassets */,
 				1E7F025A2C1C8F3600209D23 /* PDFTextExtractor.entitlements */,
@@ -185,7 +197,6 @@
 		1E7F027C2C1C90CE00209D23 /* PDF Drag Drop */ = {
 			isa = PBXGroup;
 			children = (
-				1E7F027F2C1C992B00209D23 /* PDFKitView.swift */,
 				1E7F02812C1CA02E00209D23 /* PDFDragDropView.swift */,
 			);
 			path = "PDF Drag Drop";
@@ -344,6 +355,7 @@
 				1E7F02822C1CA02E00209D23 /* PDFDragDropView.swift in Sources */,
 				1E8D36812C1F4D1B0042BD52 /* PDFFolderPickerView.swift in Sources */,
 				1E7F02802C1C992B00209D23 /* PDFKitView.swift in Sources */,
+				1E7EF6762C210D8B0093CDBC /* PDFPreview.swift in Sources */,
 				1E7A2FDF2C1D2D0400185E39 /* Coordinator.swift in Sources */,
 				1E0573C02C1E050400FCB36B /* PDFStringsModel.swift in Sources */,
 				1E7F02542C1C8F3500209D23 /* ContentView.swift in Sources */,
