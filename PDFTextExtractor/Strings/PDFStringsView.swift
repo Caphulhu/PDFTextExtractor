@@ -37,7 +37,11 @@ struct PDFStringsView: View {
                 })
             }
             List(model.strings, id: \.self) { string in
-                Text(string)
+                HStack {
+                    Text(string)
+                    Spacer()
+                    Text(string)
+                }
             }
         }
     }
